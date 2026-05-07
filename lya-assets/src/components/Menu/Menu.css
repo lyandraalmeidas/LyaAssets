@@ -1,0 +1,23 @@
+Nav{
+    background-color: black !important;
+}
+
+.navbar-brand{
+    color: rgb(255, 255, 255) !important;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+
+.nav-link{
+    color: rgb(161, 161, 161) !important;
+}
+.nav-link:hover{
+    color: rgb(88, 88, 88) !important;
+    text-decoration: underline;
+    /* Faz a linha ficar mais grossa (gordinha) */
+    text-decoration-thickness: 3px; 
+    /* Afasta a linha do texto (mais embaixo) */
+    text-underline-offset: 5px; 
+}

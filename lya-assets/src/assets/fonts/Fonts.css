@@ -1,0 +1,10 @@
+@font-face{
+    font-family: "Pixelify Sans";
+    src: local(PixelifySans), url(./PixelifySans-VariableFont_wght.ttf)format('woff');
+}
+
+/*Mudando as fontes do arquivo Menu.jsx*/
+.container{
+    font-family: "Pixelify Sans", sans-serif !important;
+    font-weight: bold;
+}
