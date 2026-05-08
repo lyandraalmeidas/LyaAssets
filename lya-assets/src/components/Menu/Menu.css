@@ -1,9 +1,11 @@
 Nav{
     background-color: black !important;
+    border-bottom: 3px solid #d77bba !important; 
 }
 
 .navbar-brand{
-    color: rgb(255, 255, 255) !important;
+    color: #d77bba !important;
+    font-size: 25px !important;
 }
 
 .navbar-brand:hover{
@@ -11,10 +13,10 @@ Nav{
 }
 
 .nav-link{
-    color: rgb(161, 161, 161) !important;
+    color: white !important;
 }
 .nav-link:hover{
-    color: rgb(88, 88, 88) !important;
+    color: #d77bba !important;
     text-decoration: underline;
     /* Faz a linha ficar mais grossa (gordinha) */
     text-decoration-thickness: 3px; 
