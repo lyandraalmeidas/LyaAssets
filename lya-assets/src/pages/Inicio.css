@@ -1,0 +1,100 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.BannerInicio {
+    background: black;
+    border: 3px solid #d77bba;
+    width: 100%;
+    max-width: 1080px;
+    min-height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    margin: 60px auto 0;
+    padding: 20px 16px;
+}
+
+.BannerInicio__imageWrapper {
+    position: relative;
+    min-width: 480px;
+    max-width: 520px;
+    border: 3px solid white;
+    animation: bannerFloat 3s ease-in-out infinite;
+}
+
+.BannerInicio__svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    filter: saturate(1.08) contrast(1.03);
+}
+
+.BannerInicio__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.14), rgba(0,0,0,0.52));
+    pointer-events: none;
+}
+
+.BannerInicio__overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.12), transparent 24%);
+}
+
+.BannerInicio__text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 32px;
+    max-width: 420px;
+    font-family: 'Pixelify Sans', sans-serif;
+    animation: textRise 0.8s ease-out forwards;
+}
+
+.BannerInicio__text span {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    opacity: 0.96;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+}
+
+.BannerInicio__text strong {
+    display: block;
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    text-shadow: 0 18px 48px rgba(0,0,0,0.55);
+    color: #ffffff;
+}
+
+@keyframes bannerFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+}
+
+@keyframes bannerReveal {
+    0% { opacity: 0; transform: translateY(16px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bannerPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.008); }
+}
+
+@keyframes textRise {
+    0% { opacity: 0; transform: translateY(24px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
