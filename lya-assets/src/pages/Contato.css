@@ -1,0 +1,68 @@
+.contatobanner {
+    padding: 20px 16px;
+    max-width: 600px;
+    margin: 20px auto; /* Adicionado margem superior */
+    text-align: center;
+    background-color: Black;
+    border: 3px solid #d77bba;
+    color: #ffffff;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.contatoformulario {
+    padding: 30px 20px;
+    max-width: 600px; /* Reduzi a largura máxima para o form não ficar gigante */
+    margin: 0 auto 20px auto;
+    background-color: Black;
+    border: 3px solid #d77bba;
+    color: #ffffff;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+/* Container do form para alinhar itens */
+.contatoformulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os campos */
+    text-align: left; /* Alinha o texto das labels à esquerda */
+}
+
+/* Estilo para labels */
+.contatoformulario label {
+    font-size: 1.2rem;
+    margin-bottom: -10px; /* Aproxima a label do campo */
+}
+
+/* Estilo para inputs e textarea */
+.contatoformulario input,
+.contatoformulario textarea {
+    padding: 10px;
+    border: 2px solid #d77bba;
+    background-color: #222;
+    color: white;
+    font-family: 'Arial', sans-serif; /* Fonte legível para input */
+    border-radius: 4px;
+}
+
+.contatoformulario textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Estilo para o botão */
+.contatoformulario button {
+    padding: 12px;
+    background-color: #d77bba;
+    color: black;
+    border: none;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contatoformulario button:hover {
+    background-color: white;
+}

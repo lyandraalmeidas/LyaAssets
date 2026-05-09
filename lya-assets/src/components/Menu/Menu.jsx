@@ -2,7 +2,6 @@ import Logo from '../../assets/icons/logo.svg';
 import HomeIcon from '../../assets/icons/home.svg';
 import CatalogIcon from '../../assets/icons/catalog.svg';
 import AboutIcon from '../../assets/icons/about.svg';
-import ContactIcon from '../../assets/icons/contact.svg';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -35,12 +34,8 @@ function Menu () {
               <img src={CatalogIcon} alt="Catalog" width="16" height="16" className="me-2" />
               Catalogo
             </Nav.Link>
-            <Nav.Link as={Link} to="/Sobre">
-              <img src={AboutIcon} alt="About" width="16" height="16" className="me-2" />
-              Sobre
-            </Nav.Link>
             <Nav.Link as={Link} to="/Contato">
-              <img src={ContactIcon} alt="Contact" width="16" height="16" className="me-2" />
+              <img src={AboutIcon} alt="About" width="16" height="16" className="me-2" />
               Contato
             </Nav.Link>
           </Nav>

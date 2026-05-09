@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor:url('./assets/icons/cursor.png'), auto;
+  cursor:url(./assets/icons/cursor.png), auto;
 }
 
 code {
