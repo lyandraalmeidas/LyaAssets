@@ -1,42 +1,43 @@
-import { createBrowserRouter, useRouteError } from "react-router-dom";
+import { createHashRouter, useRouteError } from "react-router-dom";
 import App from "./App";
 import Inicio from "./pages/Inicio.jsx";
 import Catalogo from "./pages/Catalogo.jsx";
 import Contato from "./pages/Contato.jsx";
 
-// Componente simples para tratar erros e 404
+// Componente para tratar erros e evitar a tela branca do "Hey developer"
 function PaginaDeErro() {
   const error = useRouteError();
+  console.error(error);
   return (
-    <div style={{ textAlign: 'center', padding: '50px' }}>
-      <h1>Ops! Página não encontrada.</h1>
-      <p>Ocorreu um erro inesperado ou esta rota não existe.</p>
+    <div style={{ textAlign: 'center', padding: '50px', fontFamily: 'sans-serif' }}>
+      <h1>Ops! 404</h1>
+      <p>Página não encontrada ou erro no sistema.</p>
       <p><i>{error.statusText || error.message}</i></p>
       <a href="/">Voltar para o Início</a>
     </div>
   );
 }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <PaginaDeErro />, // <--- Captura erros em qualquer sub-rota
+    errorElement: <PaginaDeErro />, 
     children: [
       {
-        index: true, // Define como a rota padrão ao carregar "/"
+        index: true, 
         element: <Inicio />
       },
       {
-        path: "Inicio", // Removi a "/" inicial (em children é opcional/melhor sem)
+        path: "inicio", 
         element: <Inicio />
       },
       {
-        path: "Catalogo",
+        path: "catalogo",
         element: <Catalogo />
       },
       {
-        path: "Contato",
+        path: "contato",
         element: <Contato />
       }
     ]
