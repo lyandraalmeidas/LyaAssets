@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import App from "./App";
 import Inicio from "./pages/Inicio.jsx";
 import Catalogo from "./pages/Catalogo.jsx";
@@ -9,6 +9,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
+      {
+        index: true,
+        element: <Navigate to="/Inicio" replace />
+      },
       {
         path: "/Inicio",
         element: <Inicio />
