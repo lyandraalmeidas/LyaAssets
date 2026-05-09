@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/LyaAssets/static/css/main.a0f4f083.css",
+    "main.js": "/LyaAssets/static/js/main.84bfcbe5.js",
+    "static/js/453.83afb2a1.chunk.js": "/LyaAssets/static/js/453.83afb2a1.chunk.js",
+    "static/media/PixelifySans-VariableFont_wght.ttf": "/LyaAssets/static/media/PixelifySans-VariableFont_wght.010a030857ba699e8717.ttf",
+    "static/media/eu.jpeg": "/LyaAssets/static/media/eu.9121da41e94e970f3d75.jpeg",
+    "static/media/logo.svg": "/LyaAssets/static/media/logo.bd9e08668a64892686eca472d57dde01.svg",
+    "static/media/catalog.svg": "/LyaAssets/static/media/catalog.f44492d6f948dd8548dead8339d20604.svg",
+    "index.html": "/LyaAssets/index.html",
+    "static/media/home.svg": "/LyaAssets/static/media/home.6f1b051c0df54a37249bc037c4e69c30.svg",
+    "static/media/about.svg": "/LyaAssets/static/media/about.eb4d06813470adf12840c3be52e866d4.svg",
+    "main.a0f4f083.css.map": "/LyaAssets/static/css/main.a0f4f083.css.map",
+    "main.84bfcbe5.js.map": "/LyaAssets/static/js/main.84bfcbe5.js.map",
+    "453.83afb2a1.chunk.js.map": "/LyaAssets/static/js/453.83afb2a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0f4f083.css",
+    "static/js/main.84bfcbe5.js"
+  ]
+}
