@@ -10,6 +10,11 @@
     font-family: 'Pixelify Sans', sans-serif;
 }
 
+h2{
+    color: #d77bba;
+    font-size: 24px;
+}
+
 .CatalogoCards {
     background-color: black;
     border: 3px solid #d77bba;

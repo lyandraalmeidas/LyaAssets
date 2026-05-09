@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Container from 'react-bootstrap/Container';
+import './Contato.css';
 
 function Contato() {
   const form = useRef();
