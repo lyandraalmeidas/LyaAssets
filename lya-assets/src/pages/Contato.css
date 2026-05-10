@@ -1,11 +1,11 @@
 body{
+    margin-top: 80px;
     background-color: #252425 !important;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 .card {
-
     border: none !important;
 
     background-color: transparent !important;
@@ -100,7 +100,6 @@ body{
 
 
 .contatobanner {
-
 padding: 20px 16px;
 
 max-width: 600px;

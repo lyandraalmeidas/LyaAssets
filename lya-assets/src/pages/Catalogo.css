@@ -1,6 +1,13 @@
 body{
+    margin-top: 80px;
     background-color: #252425 !important;
 }
+
+.Catalogo{
+    margin-top: 60px;
+}
+
+
 .CatalogoDescricao{
     padding: 20px 16px;
     max-width: 1080px;
@@ -91,6 +98,7 @@ h2{
     flex-direction: row; /* Organiza da esquerda para a direita (padrão) */
     justify-content: flex-start; /* Alinha no início da linha (esquerda) */
     gap: 16px; /* Espaçamento entre os cards */
+    margin-bottom: 60px; /* Espaçamento inferior para separar da próxima seção */
 }
 
 /* Container do Loading */
