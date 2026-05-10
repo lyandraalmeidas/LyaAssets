@@ -1,3 +1,6 @@
+body{
+    background-color: #252425 !important;
+}
 .CatalogoDescricao{
     padding: 20px 16px;
     max-width: 1080px;
@@ -88,4 +91,39 @@ h2{
     flex-direction: row; /* Organiza da esquerda para a direita (padrão) */
     justify-content: flex-start; /* Alinha no início da linha (esquerda) */
     gap: 16px; /* Espaçamento entre os cards */
+}
+
+/* Container do Loading */
+.LoadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px; /* Garante que não fique colado no topo */
+  width: 100%;
+}
+
+/* O Spinner (Círculo Girando) */
+.Spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(215, 123, 186, 0.2); /* Cor do fundo (rosa clarinho) */
+  border-top: 5px solid #d77bba; /* Cor principal (rosa forte) */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+/* Texto do carregando */
+.LoadingContainer p {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #d77bba;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Animação */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // No seu main.jsx
+import './index.css';
 import { RouterProvider } from "react-router-dom";
-import router from "./router"; // o arquivo que você criou
+import router from "./Router.jsx"; // o arquivo que você criou
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -14,4 +15,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

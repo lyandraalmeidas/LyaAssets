@@ -1,5 +1,6 @@
 
 body {
+    background-color: #252425 !important;
     margin: 0;
     padding: 0;
 }
@@ -15,7 +16,7 @@ body {
     align-items: center;
     gap: 2.4rem;
     margin: 60px auto 0;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     padding: 20px 16px;
 }
 
@@ -205,195 +206,92 @@ body {
     }
 }
 
-.Curriculo {
+/* Container Principal das Habilidades */
+.HabilidadesContainer {
     background: black;
     border: 3px solid #d77bba;
     max-width: 1080px;
     margin: 40px auto;
-    padding: 20PX 16px;
+    padding: 30px 20px;
     color: #ffffff;
     font-family: 'Pixelify Sans', sans-serif;
     animation: textRise 0.8s ease-out forwards;
 }
 
-.Curriculo__header {
+.Habilidades__titulo {
+    font-size: 2rem;
+    color: #d77bba;
     text-align: center;
-    margin-bottom: 32px;
-    border-bottom: 2px solid #d77bba;
-    padding-bottom: 24px;
-}
-
-.Curriculo__nome {
-    font-size: 2.2rem;
-    margin: 0 0 8px 0;
-    color: #d77bba;
-    letter-spacing: 0.08em;
-    font-weight: 700;
-}
-
-.Curriculo__titulo {
-    font-size: 1.1rem;
-    margin: 0;
-    color: #b0b0b0;
-    letter-spacing: 0.04em;
-}
-
-.Curriculo__secao {
-    margin-bottom: 28px;
-}
-
-.Curriculo__secao-titulo {
-    font-size: 1.3rem;
-    color: #d77bba;
-    margin: 0 0 16px 0;
-    letter-spacing: 0.06em;
-    border-bottom: 1px solid rgba(215, 123, 186, 0.3);
-    padding-bottom: 8px;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
+    border-bottom: 2px solid rgba(215, 123, 186, 0.3);
+    padding-bottom: 10px;
 }
 
-.Curriculo__item {
-    margin-bottom: 16px;
-    padding-left: 16px;
-}
-
-.Curriculo__item-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 6px;
-}
-
-.Curriculo__item-header h3 {
-    margin: 0;
-    font-size: 1.05rem;
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.Curriculo__periodo {
-    font-size: 0.9rem;
-    color: #d77bba;
-    font-weight: 700;
-}
-
-.Curriculo__instituicao {
-    margin: 4px 0 8px 0;
-    font-size: 0.95rem;
-    color: #d77bba;
-}
-
-.Curriculo__detalhes {
-    margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #d0d0d0;
-    letter-spacing: 0.02em;
-}
-
-.Curriculo__conteudo {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #d0d0d0;
-    letter-spacing: 0.02em;
-    margin: 0;
-}
-
-.Curriculo__habilidades {
+/* Grid de Habilidades */
+.Habilidades__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
-.Curriculo__coluna {
-    padding: 12px;
-    background: rgba(215, 123, 186, 0.08);
-    border-left: 2px solid #d77bba;
+/* Cards Individuais */
+.Habilidades__item {
+    background: rgba(215, 123, 186, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.Curriculo__subtitulo {
-    font-size: 0.95rem;
+.Habilidades__item:hover {
+    transform: translateY(-5px);
+    border-color: #d77bba;
+    background: rgba(215, 123, 186, 0.1);
+}
+
+.Habilidades__item h4 {
+    font-size: 1.2rem;
     color: #d77bba;
-    margin: 0 0 10px 0;
-    font-weight: 700;
-    letter-spacing: 0.04em;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.Curriculo__lista {
-    margin: 0;
-    padding-left: 20px;
+/* Lista de Itens dentro do Card */
+.Habilidades__item ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.Curriculo__lista li {
-    font-size: 0.9rem;
+.Habilidades__item li {
+    font-size: 1rem;
     color: #d0d0d0;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    padding-left: 20px;
     position: relative;
-    letter-spacing: 0.02em;
 }
 
-.Curriculo__lista li::before {
-    content: '▸';
+.Habilidades__item li::before {
+    content: '★'; /* Estrela combinando com o tema do seu site */
     color: #d77bba;
     position: absolute;
-    left: -15px;
-    font-weight: bold;
+    left: 0;
+    font-size: 0.8rem;
 }
 
-.Curriculo__contato {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.Curriculo__contato p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #d0d0d0;
-    letter-spacing: 0.02em;
-}
-
-.Curriculo__contato strong {
-    color: #d77bba;
-    font-weight: 700;
-}
-
-.Curriculo__contato a {
-    color: #d77bba;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.Curriculo__contato a:hover {
-    color: #ff99d5;
-    text-decoration: underline;
-}
-
+/* Responsividade para telas menores */
 @media (max-width: 700px) {
-    .Curriculo {
-        padding: 24px 16px;
-    }
-
-    .Curriculo__nome {
-        font-size: 1.6rem;
-    }
-
-    .Curriculo__secao-titulo {
-        font-size: 1.1rem;
-    }
-
-    .Curriculo__item-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .Curriculo__periodo {
-        margin-top: 4px;
-    }
-
-    .Curriculo__habilidades {
+    .Habilidades__grid {
         grid-template-columns: 1fr;
+    }
+    
+    .Habilidades__titulo {
+        font-size: 1.6rem;
     }
 }
 
@@ -406,6 +304,7 @@ body {
     padding: 32px 16px;
     background: rgba(0, 0, 0, 0.3);
     margin: 0 auto;
+    margin-bottom: 60px;
 }
 
 .ScrollIndicator__arrow {

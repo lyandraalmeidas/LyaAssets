@@ -3,6 +3,7 @@ import '../assets/fonts/Fonts.css'
 import './Inicio.css'
 import MinhaFoto from '../assets/icons/eu.jpeg'
 import Star from '../assets/icons/Star.png'
+import { Link } from 'react-router-dom';
 
 function Inicio() {
     return(
@@ -24,7 +25,7 @@ function Inicio() {
                     <span>Apenas Sprites!</span>
                     <strong>Há Gratuitos e sob encomenda</strong>
 
-                    <a href="/Catalogo" className='BannerInicio__cta'>Ver Catalogo</a>
+                    <Link to='/Catalogo' className='BannerInicio__cta'>Ver Catalogo</Link>
                 </div>
             </div>
 
@@ -41,96 +42,38 @@ function Inicio() {
                     <h2 className='Biografia__nome'>Lyandra Almeida da Silva</h2>
                     <p className='Biografia__texto'>Sou uma artista independente que cria sprites sob encomenda e também disponibiliza trabalhos gratuitos. Estou cursando TADS e mantenho meus projetos com estilo pixel art com muito carinho.</p>
                 </div>
-                <img src={Star} alt="Lyandra Almeida da Silva" className='Star'/>
+                <img src={Star} alt="Star Icon" className='Star'/>
             </div>
-            <div className='Curriculo'>
-                <section className='Curriculo__secao'>
-                    <h2 className='Curriculo__secao-titulo'>OBJETIVO</h2>
-                    <p className='Curriculo__conteudo'>Empenho-me a uma vaga de estágio como analista de sistemas ou em áreas correlatas, para consumar meu conhecimento acadêmico e alavancar na carreira profissional.</p>
-                </section>
 
-                <section className='Curriculo__secao'>
-                    <h2 className='Curriculo__secao-titulo'>FORMAÇÃO ACADÊMICA</h2>
-                    <div className='Curriculo__item'>
-                        <div className='Curriculo__item-header'>
-                            <h3>Ensino Médio Integral</h3>
-                            <span className='Curriculo__periodo'>2022-2024</span>
-                        </div>
-                        <p className='Curriculo__instituicao'>Colégio Estadual José Sarmento Filho</p>
-                        <p className='Curriculo__detalhes'>Participação em atividades de robótica e introdução à programação.</p>
+            <div className='HabilidadesContainer'>
+                <h2 className='Habilidades__titulo'>HABILIDADES</h2>
+                <div className='Habilidades__grid'>
+                    <div className='Habilidades__item'>
+                        <h4>Tecnologias</h4>
+                        <ul>
+                            <li>JavaScript / React</li>
+                            <li>MySQL / PHP</li>
+                            <li>Git / GitHub</li>
+                            <li>Linux</li>
+                        </ul>
                     </div>
-                    <div className='Curriculo__item'>
-                        <div className='Curriculo__item-header'>
-                            <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas - Integrado</h3>
-                            <span className='Curriculo__periodo'>2025-2027</span>
-                        </div>
+                    <div className='Habilidades__item'>
+                        <h4>Design & Arte</h4>
+                        <ul>
+                            <li>Pixel Art / Sprites</li>
+                            <li>Figma / Canva</li>
+                            <li>Design de Personagens</li>
+                        </ul>
                     </div>
-                </section>
-
-                <section className='Curriculo__secao'>
-                    <h2 className='Curriculo__secao-titulo'>HABILIDADES</h2>
-                    <div className='Curriculo__habilidades'>
-                        <div className='Curriculo__coluna'>
-                            <h4 className='Curriculo__subtitulo'>Tecnologias</h4>
-                            <ul className='Curriculo__lista'>
-                                <li>JavaScript</li>
-                                <li>MySQL</li>
-                                <li>React</li>
-                                <li>Git/GitHub</li>
-                                <li>Figma</li>
-                                <li>Canva</li>
-                                <li>Linux</li>
-                            </ul>
-                        </div>
-                        <div className='Curriculo__coluna'>
-                            <h4 className='Curriculo__subtitulo'>Idiomas</h4>
-                            <ul className='Curriculo__lista'>
-                                <li>Português nativo</li>
-                                <li>Inglês básico</li>
-                            </ul>
-                        </div>
-                        <div className='Curriculo__coluna'>
-                            <h4 className='Curriculo__subtitulo'>Geral</h4>
-                            <ul className='Curriculo__lista'>
-                                <li>Atendimento e suporte a clientes</li>
-                                <li>Criação de artes digitais</li>
-                                <li>Desenvolvimento de jogos indie</li>
-                                <li>Criação de sprites pixel art</li>
-                            </ul>
-                        </div>
+                    <div className='Habilidades__item'>
+                        <h4>Outros</h4>
+                        <ul>
+                            <li>Copywriting</li>
+                            <li>Desenvolvimento Indie</li>
+                            <li>Inglês Básico</li>
+                        </ul>
                     </div>
-                </section>
-
-                <section className='Curriculo__secao'>
-                    <h2 className='Curriculo__secao-titulo'>EXPERIÊNCIA PROFISSIONAL</h2>
-                    <div className='Curriculo__item'>
-                        <div className='Curriculo__item-header'>
-                            <h3>Designer e Copywriter</h3>
-                            <span className='Curriculo__periodo'>Prospectopia e Techtopia</span>
-                        </div>
-                        <p className='Curriculo__detalhes'>Desenvolvimento de campanhas, textos persuasivos e publicações como Designer e Copywriter.</p>
-                    </div>
-                </section>
-
-                <section className='Curriculo__secao'>
-                    <h2 className='Curriculo__secao-titulo'>EXPERIÊNCIA ACADÊMICA</h2>
-                    <div className='Curriculo__item'>
-                        <div className='Curriculo__item-header'>
-                            <h3>Hackathon 2025 - Integrado</h3>
-                        </div>
-                        <p className='Curriculo__detalhes'>Foco na resolução de problemas ambientais por meio de tecnologia geoespacial. Atuação em equipe multidisciplinar para desenvolver uma solução de identificação de focos de incêndio utilizando Google Earth e automação por script.</p>
-                    </div>
-                </section>
-
-                <section className='Curriculo__secao'>
-                    <h2 className='Curriculo__secao-titulo'>CONTATO</h2>
-                    <div className='Curriculo__contato'>
-                        <p><strong>Tel:</strong> (44) 9972-9626</p>
-                        <p><strong>E-mail:</strong> lyaalmeida.work@gmail.com</p>
-                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lyandra-almeida" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/lyandra-almeida</a></p>
-                        <p><strong>Portfólio:</strong> <a href="https://www.github.com/lyandraalmeidas" target="_blank" rel="noopener noreferrer">www.github.com/lyandraalmeidas</a></p>
-                    </div>
-                </section>
+                </div>
             </div>
         </>
     );
